@@ -1,6 +1,2 @@
-.env
-/vendor
-public/upload/
-env/local/
 .DS_Store
 .idea
