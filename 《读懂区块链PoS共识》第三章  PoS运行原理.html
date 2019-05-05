@@ -1,0 +1,1987 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:mv="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/filelist.xml">
+<link rel=Edit-Time-Data href="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author> </o:Author>
+  <o:LastAuthor>Microsoft Office 用户</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2019-05-05T10:00:00Z</o:Created>
+  <o:LastSaved>2019-05-05T10:00:00Z</o:LastSaved>
+  <o:Pages>22</o:Pages>
+  <o:Words>2137</o:Words>
+  <o:Characters>12181</o:Characters>
+  <o:Lines>101</o:Lines>
+  <o:Paragraphs>28</o:Paragraphs>
+  <o:CharactersWithSpaces>14290</o:CharactersWithSpaces>
+  <o:Version>15.0</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/themedata.thmx">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>149</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseWord2010TableStyleRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="382">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Level 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Level 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Level 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Level 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Level 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Level 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Level 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Level 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Level 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:微软雅黑;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 684670034 22 0 262175 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 684670034 22 0 262175 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	font-family:"微软雅黑",sans-serif;
+	mso-bidi-font-family:微软雅黑;}
+p.a, li.a, div.a
+	{mso-style-name:石墨文档正文;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"微软雅黑",sans-serif;
+	mso-bidi-font-family:微软雅黑;}
+p.a0, li.a0, div.a0
+	{mso-style-name:石墨文档副标题;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:24.0pt;
+	font-family:"微软雅黑",sans-serif;
+	mso-bidi-font-family:微软雅黑;
+	color:#888888;}
+p.a1, li.a1, div.a1
+	{mso-style-name:石墨文档大标题;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-style-next:石墨文档正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:20.0pt;
+	font-family:"微软雅黑",sans-serif;
+	mso-bidi-font-family:微软雅黑;
+	font-weight:bold;}
+p.a2, li.a2, div.a2
+	{mso-style-name:石墨文档中标题;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-style-next:石墨文档正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"微软雅黑",sans-serif;
+	mso-bidi-font-family:微软雅黑;
+	font-weight:bold;}
+p.a3, li.a3, div.a3
+	{mso-style-name:石墨文档小标题;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-style-next:石墨文档正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"微软雅黑",sans-serif;
+	mso-bidi-font-family:微软雅黑;
+	font-weight:bold;}
+p.a4, li.a4, div.a4
+	{mso-style-name:石墨文档标题;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-style-next:石墨文档正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:28.0pt;
+	font-family:"微软雅黑",sans-serif;
+	mso-bidi-font-family:微软雅黑;
+	font-weight:bold;}
+p.a5, li.a5, div.a5
+	{mso-style-name:石墨文档引用;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-left-alt:solid #F0F0F0 4.5pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 0cm 10.0pt;
+	font-size:10.0pt;
+	font-family:"微软雅黑",sans-serif;
+	mso-bidi-font-family:微软雅黑;
+	color:#ADADAD;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"微软雅黑",sans-serif;
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;
+	mso-bidi-font-family:微软雅黑;
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:72702486;
+	mso-list-template-ids:-1718962954;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:21.0pt;
+	text-indent:-21.0pt;}
+@list l0:level2
+	{mso-level-text:"%1\.%2\.";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;}
+@list l0:level3
+	{mso-level-text:"%1\.%2\.%3\.";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;}
+@list l0:level4
+	{mso-level-text:"%1\.%2\.%3\.%4\.";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;}
+@list l0:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;}
+@list l0:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;}
+@list l0:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;}
+@list l0:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;}
+@list l0:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9\.";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;}
+@list l1
+	{mso-list-id:247035450;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-956779418 1379063306 -819325914 2036248536 -1692350094 -1559994146 -1233603856 694584950 -213641868 -1998713770;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:21.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l2
+	{mso-list-id:1493986982;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1257270938 1834888746 1699369868 2037696368 -1014888028 338825312 -1706534796 -1318405206 591592182 1617969516;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:21.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"微软雅黑",sans-serif;}
+</style>
+<![endif]-->
+</head>
+
+<body bgcolor=white lang=ZH-CN style='tab-interval:21.0pt'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=a4><span style='font-size:16.0pt'>第三章<span lang=EN-US> <span
+class=SpellE>PoS</span></span>运行原理</span><span lang=EN-US style='font-size:
+14.0pt'><o:p></o:p></span></p>
+
+<p class=a>本章，我尝试描述<span class=SpellE><span lang=EN-US>PoS</span></span>共识运行的步骤，来了解其大致的原理。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>一般情况下，<span class=SpellE><span lang=EN-US>PoS</span></span>共识的运行有<span
+lang=EN-US>7</span>个基本步骤，运行节点，注册成验证人，<span lang=EN-US>Stake</span>，选举验证人，打包交易，广播交易，验证人确认，以下我会对每个步骤进行解释。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>因为不同项目有不同的实现方案，当我们在看具体项目时，会发现有的项目会有细节上的不同，或者已有步骤的先后次序不一样，这些不同都是这些项目的特色，或是增加安全，或是提高性能。我把各个项目中的精华拿出来，我发现大致过程是差不多的，用一句话将<span
+class=SpellE><span lang=EN-US>PoS</span></span>共识串起来：</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><b style='mso-bidi-font-weight:normal'>持币人将币<span lang=EN-US>Stake</span>，获得出块权利，在指定时间打包交易，并广播出去，得到验证后，新区块生成。</b></p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a1 style='margin-top:36.0pt;margin-right:0cm;margin-bottom:13.0pt;
+margin-left:42.0pt;text-indent:-21.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+lang=EN-US style='font-size:12.5pt'><span style='mso-list:Ignore'>1.1.<span
+style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+style='font-size:14.0pt'>运行节点</span><span lang=EN-US style='font-size:12.5pt'><o:p></o:p></span></p>
+
+<p class=a>持币人成为验证人之前，需要运行节点客户端，成为一个区块链分布式网络中的接入点，也叫节点。早期的区块链项目，为了方便大家接入网络，都会有命令行，为用户体验着想的团队还会开发一个简单的可视化客户端，即钱包客户端。这些钱包客户端以桌面版为主，一般支持<span
+lang=EN-US>Windows</span>，<span class=SpellE><span lang=EN-US>MacOS</span></span>和<span
+lang=EN-US>Linux3</span>种系统，如<span lang=EN-US>Bitcoin Core</span>，<span
+lang=EN-US>Parity</span>等。客户端里集成了运行的命令，并且都是可视化的简单操作，用户只需要简单点几下，即可以运行起节点。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>这个节点就是我们所说的，区块链分布式账簿中的一个点，这个点（也就是你运行节点的电脑），存储着区块链所有的交易记录，并将参与到整个网络的共识当中去。所以，你的电脑即充当了存储的功能，也充当着计算的功能。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>那<span class=SpellE><span lang=EN-US>Nuls</span></span>项目举例，首先在官网下载对应的钱包客户端，以<span
+lang=EN-US>MACOS</span>为例</p>
+
+<p class=a><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Drawing_x0020_0" o:spid="_x0000_i1030" type="#_x0000_t75"
+ alt="图片" style='width:411pt;height:198pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/image001.png" o:title="图片"/>
+</v:shape><![endif]--><![if !vml]><img width=411 height=198
+src="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/image002.gif" alt=图片 v:shapes="Drawing_x0020_0"><![endif]></span></p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>安装好钱包后，打开，进入区块同步的阶段。从途中可以见到主网高度为<span lang=EN-US>1987877</span>个块，本地同步了<span
+lang=EN-US>374</span>个块，按照网路速度和数据大小，区块同步可能持续的时间较长。</p>
+
+<p class=a><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Drawing_x0020_1" o:spid="_x0000_i1029" type="#_x0000_t75" alt="图片"
+ style='width:411pt;height:196pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/image003.png" o:title="图片"/>
+</v:shape><![endif]--><![if !vml]><img width=411 height=196
+src="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/image004.gif" alt=图片 v:shapes="Drawing_x0020_1"><![endif]></span></p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>区块同步完成之后，你可以选择创建一个钱包，或者导入钱包</p>
+
+<p class=a><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Drawing_x0020_2" o:spid="_x0000_i1028" type="#_x0000_t75" alt="图片"
+ style='width:411pt;height:206pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/image005.png" o:title="图片"/>
+</v:shape><![endif]--><![if !vml]><img width=411 height=206
+src="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/image006.gif" alt=图片 v:shapes="Drawing_x0020_2"><![endif]></span></p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>创建完成后的一个钱包</p>
+
+<p class=a><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Drawing_x0020_3" o:spid="_x0000_i1027" type="#_x0000_t75" alt="图片"
+ style='width:411pt;height:206pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/image007.png" o:title="图片"/>
+</v:shape><![endif]--><![if !vml]><img width=411 height=206
+src="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/image008.gif" alt=图片 v:shapes="Drawing_x0020_3"><![endif]></span></p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>钱包创建完成，可以参与到<span class=SpellE><span lang=EN-US>PoS</span></span>共识，即<span
+class=SpellE><span lang=EN-US>PoS</span></span>挖矿中去。按照<span class=SpellE><span
+lang=EN-US>Nuls</span></span>的共识，你可以将你的挖矿权益委托给矿工。钱包中已经列举了一些矿工，选择一个矿工，输入你要委托的<span
+class=SpellE><span lang=EN-US>Nuls</span></span>数量，就可以参与到共识挖矿中来。</p>
+
+<p class=a><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Drawing_x0020_4" o:spid="_x0000_i1026" type="#_x0000_t75" alt="图片"
+ style='width:411pt;height:206pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/image009.png" o:title="图片"/>
+</v:shape><![endif]--><![if !vml]><img width=411 height=206
+src="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/image010.gif" alt=图片 v:shapes="Drawing_x0020_4"><![endif]></span></p>
+
+<p class=a><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Drawing_x0020_5" o:spid="_x0000_i1025" type="#_x0000_t75" alt="图片"
+ style='width:411pt;height:206pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/image011.png" o:title="图片"/>
+</v:shape><![endif]--><![if !vml]><img width=411 height=206
+src="《读懂区块链PoS共识》第三章%20%20PoS运行原理.fld/image012.gif" alt=图片 v:shapes="Drawing_x0020_5"><![endif]></span></p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>除了钱包客户端之外，项目提供最多的方式就是命令行了，有编程基础的小伙伴，可以按照官方的介绍，执行相关的命令就可以了。命令行我们拿<span
+class=SpellE><span lang=EN-US>Tezso</span></span>来举例一下，以下是用命令行创建<span
+class=SpellE><span lang=EN-US>Teozs</span></span>节点的步骤：<span lang=EN-US><a
+href="https://github.com/tezoscommunity/FAQ/blob/master/Compile_Mainnet.md"><span
+style='color:blue'>https://github</span></a><a
+href="https://github.com/tezoscommunity/FAQ/blob/master/Compile_Mainnet.md"><span
+style='color:blue'>.c</span></a><a
+href="https://github.com/tezoscommunity/FAQ/blob/master/Compile_Mainnet.md"><span
+style='color:blue'>om/tez</span></a><a
+href="https://github.com/tezoscommunity/FAQ/blob/master/Compile_Mainnet.md"><span
+style='color:blue'>osc</span></a><a
+href="https://github.com/tezoscommunity/FAQ/blob/master/Compile_Mainnet.md"><span
+style='color:blue'>omm</span></a><a
+href="https://github.com/tezoscommunity/FAQ/blob/master/Compile_Mainnet.md"><span
+style='color:blue'>unity/F</span></a><a
+href="https://github.com/tezoscommunity/FAQ/blob/master/Compile_Mainnet.md"><span
+style='color:blue'>AQ/blob/master/Compile_Mainnet.md</span></a></span></p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span style='font-size:9.0pt'>登录<span class=SpellE><span lang=EN-US>Debian</span></span>或是<span
+lang=EN-US>Ubuntu</span>系统，并升级基础包（用你机器的<span lang=EN-US>IP</span>将下面命令中的<span
+lang=EN-US> &quot;192.155.xxx.xxx&quot; </span>替换掉）</span><span lang=EN-US
+style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>ssh</span></span><span
+lang=EN-US style='font-size:9.0pt'> root@192.155.xxx.xxx</span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<p class=a5><span lang=EN-US style='font-size:9.0pt'>apt-get update</span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<p class=a5><span lang=EN-US style='font-size:9.0pt'>apt-get <span
+class=SpellE>dist</span>-upgrade -y</span><span lang=EN-US style='font-size:
+8.0pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=a><span style='font-size:9.0pt'>创建一个<span class=SpellE><span
+lang=EN-US>Tezos</span></span>账户，不要以<span lang=EN-US>root</span>权限运行服务。注意<span
+lang=EN-US>make build-deps</span>这个命令需要<span class=SpellE><span lang=EN-US>sudo</span></span>的权限</span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>adduser</span></span><span
+lang=EN-US style='font-size:9.0pt'> <span class=SpellE>tezos</span></span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<p class=a5><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>adduser</span></span><span
+lang=EN-US style='font-size:9.0pt'> <span class=SpellE>tezos</span> <span
+class=SpellE>sudo</span></span><span lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<p class=a5><span lang=EN-US style='font-size:9.0pt'>reboot</span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<p class=a5><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>ssh</span></span><span
+lang=EN-US style='font-size:9.0pt'> tezos@192.155.xxx.xxx</span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=a><span style='font-size:9.0pt;color:#494949'>如果你运行的是<span lang=EN-US>Ubuntu
+16, </span>执行下面的命令安装<span lang=EN-US> <span class=SpellE>bubblewrap</span></span>和最新版本的<span
+class=SpellE><span lang=EN-US>git</span></span></span><span lang=EN-US
+style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>sudo</span></span><span
+lang=EN-US style='font-size:9.0pt'> add-apt-repository <span class=SpellE><span
+class=GramE>ppa:ansible</span></span>/<span class=SpellE>bubblewrap</span></span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<p class=a5><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>sudo</span></span><span
+lang=EN-US style='font-size:9.0pt'> add-apt-repository <span class=SpellE><span
+class=GramE>ppa:git</span>-core</span>/<span class=SpellE>ppa</span></span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<p class=a5><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>sudo</span></span><span
+lang=EN-US style='font-size:9.0pt'> apt-get update</span><span lang=EN-US
+style='font-size:8.0pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=a><span style='font-size:9.0pt;color:#494949'>创建环境初始化</span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>sudo</span></span><span
+lang=EN-US style='font-size:9.0pt'> apt-get install -y patch unzip <span
+class=GramE>make</span> <span class=SpellE>gcc</span> m4 <span class=SpellE>git</span>
+g++ <span class=SpellE>aspcud</span> <span class=SpellE>bubblewrap</span> curl
+bzip2 <span class=SpellE>rsync</span> <span class=SpellE>libev</span>-dev <span
+class=SpellE>libgmp</span>-dev <span class=SpellE>pkg-config</span> <span
+class=SpellE>libhidapi</span>-dev</span><span lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=a><span style='font-size:9.0pt;color:#494949'>安装<span lang=EN-US>OPAM</span></span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<p class=a style='margin-left:42.0pt;text-indent:-21.0pt;mso-list:l2 level2 lfo2'><![if !supportLists]><span
+lang=EN-US style='font-size:8.0pt;font-family:Wingdings;mso-fareast-font-family:
+Wingdings;mso-bidi-font-family:Wingdings;color:#494949'><span style='mso-list:
+Ignore'>¡<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='font-size:9.0pt;color:#494949'>方法一</span><span lang=EN-US
+style='font-size:8.0pt;color:#494949'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>sh</span></span><span
+lang=EN-US style='font-size:9.0pt'> &lt;(curl -<span class=SpellE>sL</span> </span><span
+lang=EN-US><a
+href="https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)"><span
+style='color:blue'>ht</span></a><a
+href="https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)"><span
+style='color:blue'>tps://r</span></a><a
+href="https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)"><span
+style='color:blue'>aw</span></a><a
+href="https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)"><span
+style='color:blue'>.githubusercontent.com/oc</span></a><a
+href="https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)"><span
+style='color:blue'>a</span></a><a
+href="https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)"><span
+style='color:blue'>ml</span></a><a
+href="https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)"><span
+style='color:blue'>/opam/master/she</span></a><a
+href="https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)"><span
+style='color:blue'>l</span></a><a
+href="https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)"><span
+style='color:blue'>l/inst</span></a><a
+href="https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)"><span
+style='color:blue'>all.sh)</span></a></span><span lang=EN-US style='font-size:
+8.0pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=a style='margin-left:42.0pt;text-indent:-21.0pt;mso-list:l1 level2 lfo3'><![if !supportLists]><span
+lang=EN-US style='font-size:8.0pt;font-family:Wingdings;mso-fareast-font-family:
+Wingdings;mso-bidi-font-family:Wingdings;color:#494949'><span style='mso-list:
+Ignore'>¡<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='font-size:9.0pt;color:#494949'>方法二</span><span lang=EN-US
+style='font-size:8.0pt;color:#494949'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>wget</span></span><span
+lang=EN-US style='font-size:9.0pt'> </span><span lang=EN-US><a
+href="https://github.com/ocaml/opam/releases/download/2.0.0/opam-2.0.0-x86_64-linux"><span
+style='color:blue'>https://githu</span></a><a
+href="https://github.com/ocaml/opam/releases/download/2.0.0/opam-2.0.0-x86_64-linux"><span
+style='color:blue'>b.com/ocaml/</span></a><a
+href="https://github.com/ocaml/opam/releases/download/2.0.0/opam-2.0.0-x86_64-linux"><span
+style='color:blue'>opam/releases/</span></a><a
+href="https://github.com/ocaml/opam/releases/download/2.0.0/opam-2.0.0-x86_64-linux"><span
+style='color:blue'>d</span></a><a
+href="https://github.com/ocaml/opam/releases/download/2.0.0/opam-2.0.0-x86_64-linux"><span
+style='color:blue'>ownload/2.0.0/opam-2.0.</span></a><a
+href="https://github.com/ocaml/opam/releases/download/2.0.0/opam-2.0.0-x86_64-linux"><span
+style='color:blue'>0-x86</span></a><a
+href="https://github.com/ocaml/opam/releases/download/2.0.0/opam-2.0.0-x86_64-linux"><span
+style='color:blue'>_6</span></a><a
+href="https://github.com/ocaml/opam/releases/download/2.0.0/opam-2.0.0-x86_64-linux"><span
+style='color:blue'>4-linux</span></a></span><span lang=EN-US style='font-size:
+8.0pt'><o:p></o:p></span></p>
+
+<p class=a5><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>sudo</span></span><span
+lang=EN-US style='font-size:9.0pt'> mv opam-2.0.0-x86_64-linux /<span
+class=SpellE>usr</span>/local/bin/<span class=SpellE>opam</span></span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<p class=a5><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>sudo</span></span><span
+lang=EN-US style='font-size:9.0pt'> <span class=SpellE>chmod</span> <span
+class=SpellE>a+x</span> /<span class=SpellE>usr</span>/local/bin/<span
+class=SpellE>opam</span></span><span lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=a><span style='font-size:9.0pt;color:#494949'>获得主网源码</span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>git</span></span><span
+lang=EN-US style='font-size:9.0pt'> clone -b <span class=SpellE>mainnet</span> </span><span
+lang=EN-US><a href="https://gitlab.com/tezos/tezos.git"><span style='color:
+blue'>h</span></a><a href="https://gitlab.com/tezos/tezos.git"><span
+style='color:blue'>ttps://gitlab.com/</span></a><a
+href="https://gitlab.com/tezos/tezos.git"><span style='color:blue'>t</span></a><a
+href="https://gitlab.com/tezos/tezos.git"><span style='color:blue'>ezos/t</span></a><a
+href="https://gitlab.com/tezos/tezos.git"><span style='color:blue'>e</span></a><a
+href="https://gitlab.com/tezos/tezos.git"><span style='color:blue'>zos.git</span></a></span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<p class=a5><span lang=EN-US style='font-size:9.0pt'>cd <span class=SpellE>tezos</span></span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=a><span style='font-size:9.0pt;color:#494949'>初始化依赖工具</span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5><span lang=EN-US>make build-deps</span></p>
+
+</div>
+
+<p class=a><span style='font-size:9.0pt;color:#494949'>编译</span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5><span class=SpellE><span lang=EN-US>eval</span></span><span
+lang=EN-US> $(<span class=SpellE>opam</span> <span class=SpellE>env</span>)</span></p>
+
+<p class=a5><span lang=EN-US>make</span></p>
+
+</div>
+
+<p class=a><span style='font-size:9.0pt;color:#494949'>设点节点身份</span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5><span class=GramE><span lang=EN-US>./</span></span><span
+class=SpellE><span lang=EN-US>tezos</span></span><span lang=EN-US>-node
+identity generate 26.</span></p>
+
+</div>
+
+<p class=a><span style='font-size:9.0pt;color:#494949'>运行节点，等待节点同步成功</span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5><span class=SpellE><span class=GramE><span lang=EN-US>nohup</span></span></span><span
+class=GramE><span lang=EN-US> .</span></span><span lang=EN-US>/<span
+class=SpellE>tezos</span>-node run --<span class=SpellE>rpc-addr</span>
+127.0.0.1:8732 &amp;</span></p>
+
+</div>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>不过在此要说明的一点就是，自己运行全节点，意味着你需要付出诸如存储空间，计算力，电力等资源，并且保证你是<span
+lang=EN-US>24</span>小时开机，才能让一个完整的全节点钱包运行下去，同时可以获得<span class=SpellE><span
+lang=EN-US>PoS</span></span>共识中<span lang=EN-US>Stake</span>的收益，所以这看上去不是一个很简单的差事。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>目前为止，全节点运行已经慢慢发展了几个阶段，下面我来说说这几个阶段的演变过程。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>一般自己运行运行起来的节点是全节点，全节点就是记录了主网上线以来的全部数据。初期的<span class=SpellE><span
+lang=EN-US>PoS</span></span>项目基本都是类似<span class=SpellE><span lang=EN-US>Nul</span></span>这样的全节点钱包客户端，其模拟的也是比特币初期可用电脑<span
+lang=EN-US>CPU</span>挖矿的原理，运行节点的门槛也就是需要一台计算机。但全节点有个不好的地方，随着区块数据的增多，会需要更多存储空间。同时，钱包客户端不能掉线，也就是不能关机，断网或者断电，要不然你无法运行节点来获得出块机会，已获得的出块机会在此种情况下也无法继续。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>家用电脑不同于专业挖矿，所以随着个人全节点的缺点暴露的越来越多，开始出现专业运行的矿池，矿池是专业挖矿的机构，可以支持<span
+lang=EN-US>24</span>小时，不断电，不停网的挖矿方式，普通用户如果不想自己守着电脑挖矿，可以将币<b style='mso-bidi-font-weight:
+normal'>发送</b>给矿池，让矿池来帮助自己出块获得奖励。矿池通过收取一定的手续费来获得收入。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>这也是委托的第一种方式，但是这种委托需要把币给到矿池手中，用户往往需要承担很大的风险，如果矿池失窃，或是卷款潜逃，用户往往一点办法都没有，需要极大的信任，还需要矿池维护人员有良好的职业操守。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>项目方在运行一段时间后，也会发现个人<span class=SpellE><span lang=EN-US>Stak</span></span>的意愿并不是很高，而自建矿池或者集成已有矿池到委托验证人的选择里面来，既可以帮助矿池做安全背书，也能大大提高个人<span
+lang=EN-US>Stake</span>的意愿，维护网络安全（当然，前提是对验证人有严格的审核），所以我们开始看到第二种委托形式<span
+lang=EN-US>——</span>项目方支持委托权益的转移了。这种形式下，个人只需要将币转移到中间账户，或者是发送个合约账户，就可以完成奖励的获得，承担的风险大大降低。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>但第二种形式的委托也有问题，毕竟用户无法使用<span lang=EN-US>Stake</span>的币，大量用户会因为流动性原因不进行<span
+lang=EN-US>Stake</span>。后来有项目方做了进一步的妥协，支持委托只是建立一种关系，而不需转移代币，<span class=SpellE><span
+lang=EN-US>Tezos</span></span>上的委托就是如此。用户发起委托，委托期间，但是仍然能支配自己的代币，极大的降低了非自愿运行节点用户<span
+lang=EN-US>Staking</span>的成本（当然，第三种形式的委托，用户能自由支配委托代币是因为有节点帮助用户交了抵押金）。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>但是，代交抵押金来出块的方式，并不能让节点获得足够大的收益，也不能以此形成更专业化的操作矿池，虽然对去中心化有极大的帮助，但是在一定程度上会降低一些节点验证人的动力。于是，第四种委托方式出现了，用户委托仍然是层关系，委托期间，<span
+lang=EN-US>Staking</span>代币的归属权仍然属于用户自己，但是要使用，比如发送，需要解锁<span class=SpellE><span
+lang=EN-US>Stak</span></span>的代币才可以，为了防范长程攻击，解锁的时间一般持续<span lang=EN-US>20</span>天<span
+lang=EN-US>~40</span>天左右，以提高攻击成本。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>无论那种形式的委托，只要你想成为验证人，那么第一步肯定还是需要自己运行节点的。现在只要是公链项目都支持运行节点，大多数都提供了命令行的运行方式，钱包客户端运行的全节点已经开始慢慢退出舞台。运行节点变成了一件更加专业的事情，每个<span
+class=SpellE><span lang=EN-US>PoS</span></span>共识项目都有自己的命令，按照命令执行即可以运行全节点。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a1 style='margin-top:36.0pt;margin-right:0cm;margin-bottom:13.0pt;
+margin-left:42.0pt;text-indent:-21.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+lang=EN-US style='font-size:12.5pt'><span style='mso-list:Ignore'>1.2.<span
+style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+style='font-size:14.0pt'>声明为验证人</span><span lang=EN-US style='font-size:12.5pt'><o:p></o:p></span></p>
+
+<p class=a>节点运行起来后，需要执行变成验证人的命令，执行完命令，就可以变成验证人。一般对验证人的要求比全节点的要求要多。首先你需要保证的就是验证人节点的配置符合项目的要求，一般情况下，验证人的配置要求要比全节点的配置要求要高。其次确认项目对验证人节点的一些硬性门槛，如持币量，锁定时间等。<span
+class=SpellE><span lang=EN-US>Teozs</span></span>要求验证节点的持币量需要达到<span
+lang=EN-US>10000</span>个<span lang=EN-US>XTZ</span>，<span lang=EN-US>Cosmos</span>要求验证节点的<span
+lang=EN-US>Stake</span>量在前<span lang=EN-US>100</span>位，<span class=SpellE><span
+lang=EN-US>Cardano</span></span>要求节点是矿池，持币量（包含委托量）达到总体币量的<span lang=EN-US>1%</span>。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>除了硬性要求，还有一些软性实力的要求，比如验证人需要时团队，或者公司，要求不能用云服务器，要求在社区有一定的声誉，要求投票需要达到一定的数量等等，这些门槛都需要在申请验证人之前了解，如果在不了解的情况下运行，可能无法声明成为验证人。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>同样以<span class=SpellE><span lang=EN-US>Tezos</span></span>为例，<span
+class=SpellE><span lang=EN-US>Tezos</span></span>对机器配置的要求不高，但有持币<span
+lang=EN-US>10000</span>个<span lang=EN-US>XTZ</span>数量的门槛，达到门槛，执行以下命令成为验证人</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span style='font-size:9.0pt;color:#494949'>激活成为<span lang=EN-US>Baker</span></span><span
+lang=EN-US style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5><span class=GramE><span lang=EN-US>./</span></span><span
+class=SpellE><span lang=EN-US>tezos</span></span><span lang=EN-US>-client add
+address <span class=SpellE>my_account</span> &lt;public key hash from donation
+PDF&gt;</span></p>
+
+<p class=a5><span class=GramE><span lang=EN-US>./</span></span><span
+class=SpellE><span lang=EN-US>tezos</span></span><span lang=EN-US>-client
+activate fundraiser account <span class=SpellE>my_account</span> with
+&lt;activation key from verification site&gt;</span></p>
+
+</div>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a1 style='margin-top:36.0pt;margin-right:0cm;margin-bottom:13.0pt;
+margin-left:42.0pt;text-indent:-21.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+lang=EN-US style='font-size:12.5pt'><span style='mso-list:Ignore'>1.3.<span
+style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+style='font-size:14.0pt'>质押<span lang=EN-US>Stake</span></span><span
+lang=EN-US style='font-size:12.5pt'><o:p></o:p></span></p>
+
+<p class=a><span lang=EN-US>Stake</span>和成为验证人可以合成一部，由于<span lang=EN-US>Stake</span>在<span
+class=SpellE><span lang=EN-US>PoS</span></span>共识中的重要性，我把这两部拆开了。成为验证人之后，该验证人账户中的币会被检测，带有门槛的<span
+class=SpellE><span lang=EN-US>PoS</span></span>共识会在此检测一些条件，当条件符合时，账户被标识为合格，然后放到验证人列表当中。如果不合格，此验证人并不会在真正的验证人列表里面。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>合格的验证人，其账户里面所有的币都是质押成为<span lang=EN-US>Staking</span>的币，系统会计算该账户的<span
+lang=EN-US>Staking</span>数量在总体<span lang=EN-US>Staking</span>量中的占比，使用算法来选举每个区块的验证人。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>在<span class=SpellE><span lang=EN-US>Tezos</span></span>上没有<span
+lang=EN-US>Stake</span>的操作命令，只需要生命成为验证人的账号有代币，成为验证人之后，该账户的币就相当于默认<span
+lang=EN-US>Stake</span>了。另外，需要注意的是，在<span class=SpellE><span lang=EN-US>Tezos</span></span>上执行成为验证人的命令时，系统就会进行验证人门槛的判断，比如账户中是否有<span
+lang=EN-US>10000</span>个<span lang=EN-US>XTZ</span>。只有满足门槛后，才能成为验证人，并且进行<span
+lang=EN-US>Stake</span>。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a1 style='margin-top:36.0pt;margin-right:0cm;margin-bottom:13.0pt;
+margin-left:42.0pt;text-indent:-21.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+lang=EN-US style='font-size:12.5pt'><span style='mso-list:Ignore'>1.4.<span
+style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+style='font-size:14.0pt'>选举验证人</span><span lang=EN-US style='font-size:12.5pt'><o:p></o:p></span></p>
+
+<p class=a>系统会从候选的验证人列表当中选择出块人。选择出块人的算法有很多种，每种的优缺点都不一样，但是它们都有一个共同要保证的任务，那就是保证选举结果不能被操纵，不能被预测，防止<span
+lang=EN-US>Grind Attack</span>的攻击发生。只有安全性足够高的算法，才能保证整个<span lang=EN-US>token</span>的激励系统不会被单一方所控制。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>以下我们来列举几种目前比较流行的选举方式：</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><b style='mso-bidi-font-weight:normal'><span lang=EN-US>Follow-the-Satoshi</span></b><span
+lang=EN-US style='font-size:10.5pt'><o:p></o:p></span></p>
+
+<p class=a><span lang=EN-US>Follow-the-Satoshi</span>算法，最早出现在论文《<span
+lang=EN-US><a href="https://eprint.iacr.org/2014/452.pdf"><span
+style='color:blue'>Proof of Activity: Extending Bitcoin’s Proof</span></a><a
+href="https://eprint.iacr.org/2014/452.pdf"><span style='color:blue'>o</span></a><a
+href="https://eprint.iacr.org/2014/452.pdf"><span style='color:blue'>f</span></a><a
+href="https://eprint.iacr.org/2014/452.pdf"></a><a
+href="https://eprint.iacr.org/2014/452.pdf"><span style='color:blue'>Work via
+Proof of Stake</span></a></span>》中，其作用就是在<span class=SpellE><span lang=EN-US>PoA</span></span>（<span
+lang=EN-US>Proof of Activity</span>）共识当中选出出块人。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span lang=EN-US>Satoshi</span>这里的意思是聪，是比特币电子货币形式里，最小的计数单位，每个已被铸造出来的聪都对应一个<span
+lang=EN-US>UTXO</span>（未经花费的输出<span lang=EN-US>--<span style='color:#545454'>Unspent
+Transaction Output</span></span><span style='color:#545454'>），而每个<span
+lang=EN-US>UTXO</span>都可以对应到一个私钥，而每一个私钥都可以对应到一个持有人。如果用持币权重（<span lang=EN-US>Voting
+Power</span>）代替算力权重的话，<span class=SpellE><span lang=EN-US>PoS</span></span>共识中的持币人其权重，其实就是多个聪的集合，所以选择出块人，即从这些聪的集合当中选择就可以了，哪个持有人中拥有最多被选中的聪，那他就是这个高度的出块人。这就是<span
+lang=EN-US>Follow-the-Satoshi</span>的原理。</span></p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span class=SpellE><span lang=EN-US>PoS</span></span>中的持币人<span
+lang=EN-US>staking</span>后，可以被最小单位<span lang=EN-US>s</span>划分成很多份，<span
+lang=EN-US>Follow-the-Satoshi</span>当中会有一个随机数输入源<span lang=EN-US>p</span>，充当最开始的随机起始点，然后随机选出这个出块人。每个持币人都有多份<span
+lang=EN-US>s</span>，那么单个块的出块人就是当前包含最多<span lang=EN-US>p</span>的持币人。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>运用<span lang=EN-US>Follow-the-Satoshi</span>算法的<span class=SpellE><span
+lang=EN-US>PoS</span></span>项目有<span class=SpellE><span lang=EN-US>Tezos</span></span>和<span
+class=SpellE><span lang=EN-US>Cardano</span></span>。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span class=SpellE><span lang=EN-US>Tezos</span></span>对算法做了改良，因为聪的单位太小，随着系统锻造出来的聪越来越多，选择算法会变得低效，所以<span
+class=SpellE><span lang=EN-US>Tezos</span></span>进行了规整，以<span lang=EN-US>10000XTZ</span>为一个卷（<span
+lang=EN-US>Roll</span>），将卷作为随机数选择的目标，以此来提高选择效率，包含选中最多的卷将成为块的出块人。同时，为了让随机数源变得不可预测，<span
+class=SpellE><span lang=EN-US>Tezos</span></span>将<span lang=EN-US>4096</span>个块当成一个选举周期（<span
+lang=EN-US>Cycle</span>），利用上一个周期出块人披露的<span lang=EN-US>Nonce</span>（在通信安全中，<span
+lang=EN-US>Nonce</span>是一个在加密通信只能使用一次的数字）为随机数输入源。未披露的验证人将会被扣除抵押金。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span class=SpellE><span lang=EN-US>Cardano</span></span>的做法和<span
+class=SpellE><span lang=EN-US>Tezos</span></span>类似，以一定区块数为选举周期（<span
+lang=EN-US>Epoch</span>），每个周期有一个创世块，每个创世块中包含了每个块的出块人和一个随机种子<span lang=EN-US>p</span>。和<span
+class=SpellE><span lang=EN-US>Tezos</span></span>不同的是，<span class=SpellE><span
+lang=EN-US>Cardano</span></span>每个块只有一个出块人，如果这个出块人掉线，这个块会被抛弃，直接进入下一个区块。而<span
+class=SpellE><span lang=EN-US>Tezos</span></span>中单个块会有多个出块人，这些出块人会有不同的优先级，以避免备选出块人出现的种种情况。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><b style='mso-bidi-font-weight:normal'><span lang=EN-US>Round Robin</span></b><span
+lang=EN-US style='font-size:10.5pt'><o:p></o:p></span></p>
+
+<p class=a>维基百科对<span lang=EN-US>Round Robin</span>的解释是：</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5>术语循环<span lang=EN-US>/</span>轮转<span lang=EN-US>/</span>轮替（英语：<span
+lang=EN-US>Round-robin</span>）用于多种情况中，通常指将多个某物轮流用于某事，例如<span lang=EN-US>“</span>逐户派对<span
+lang=EN-US>”</span>（<span lang=EN-US>round-robin-party</span>）中所有参与者要挨家挨户地拜访每位参与者的住处并参加那里的小型聚会。联名信（<span
+lang=EN-US>round-robin letter</span>）往往是指一大群下属为批评其领导而写的一封信，这种信一般只在签名人数多到难于逐个报复后才会寄出。</p>
+
+</div>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>一个简单的<span lang=EN-US>Round Robin</span>算法的例子如：<span lang=EN-US>F(<span
+class=SpellE>i</span>, b) = 1 if <span class=SpellE>b.height</span> % N == <span
+class=SpellE>i</span> else 0</span></p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span lang=EN-US>RR</span>（<span lang=EN-US>Round Robin</span>）常用于联盟链或者私有链居多，因为循环出块的可预知性太强，如果在一个可允许被随意进入（<span
+class=SpellE><span lang=EN-US>Pemissionless</span></span>）的区块链网络里面，被攻击的概率会比较大，系统抗风险性变差。所以，在联盟链或者私有链的网络里面，各个节点互相知道<span
+lang=EN-US>/</span>审核<span lang=EN-US>/</span>同意（<span class=SpellE><span
+lang=EN-US>Pemission</span></span>），利用<span lang=EN-US>RR</span>既是一种简单可行的方式，又是一种高效的算法。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>但是，后来有项目方改良了<span lang=EN-US>RR</span>的算法，用于到<span class=SpellE><span
+lang=EN-US>Pemissionless</span></span>的区块链网络中来确定出块人。我不确定是否是<span lang=EN-US>EXONUM</span>团队对<span
+lang=EN-US>RR</span>进行了首次改良，但是我在<span lang=EN-US>google</span>找到到了他们改良的<span
+lang=EN-US><a
+href="https://exonum.com/blog/04-28-17-leader-election-roundrobin/"><span
+lang=ZH-CN style='color:blue'>方案</span></a></span>。相对的，在<span class=SpellE><span
+lang=EN-US>Multichain</span></span>的<span lang=EN-US><a
+href="https://www.multichain.com/download/MultiChain-White-Paper.pdf"><span
+lang=ZH-CN style='color:blue'>白皮书</span></a></span>中也有将<span lang=EN-US>RR</span>算法运用到联盟链中的说明。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>在<span lang=EN-US>EXONUM</span>里面，<span lang=EN-US>RR</span>的执行逻辑是，在一个高度<span
+lang=EN-US>H</span>里面，所有出块人排列成一定的顺序（优先级），如果首位出块人掉线则直接跳过，第二位出块人代替首位出块人位置来出块，如果第二位出块人掉线，则排在第三位的出块人顶上，以此类推，由此得出循环算法的说法。在高度<span
+lang=EN-US>H+1</span>里面，在<span lang=EN-US>H</span>高度的出块人将不在获得出块机会，其出块权利会被锁定一定的周期<span
+lang=EN-US>F</span>，只有等权利解锁后才会再次被加入的排序中来。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>当然，每个高度<span lang=EN-US>H</span>的出块人排序不能是固定的，那么会被攻击者找到攻击目标。所以每个高度<span
+lang=EN-US>H</span>的顺序由算法得出，<span lang=EN-US>T = Hash(H) mod M!</span>。可以确定每轮（<span
+lang=EN-US>Round</span>），验证人的排序都不一样，这样就避免了相同顺序下，验证人合谋的低成本问题。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span lang=EN-US>Cosmos</span>同样使用了<span lang=EN-US>RR</span>算法来进行验证人选举。<span
+lang=EN-US>Cosmos</span>按照出块人的权重（<span lang=EN-US>Voting Power</span>），来确定高度<span
+lang=EN-US>H</span>下的出块人（<span lang=EN-US>Proposer</span>），每个高度的第一个<span
+lang=EN-US>Proposer</span>对出块进行提议，然后进入该高度<span lang=EN-US>H</span>的第一个<span
+lang=EN-US>Round</span>，其他验证人对该提议进行两轮投票（<span class=SpellE><span lang=EN-US>Prevote</span></span>和<span
+class=SpellE><span lang=EN-US>Precommit</span></span>），两轮都超过<span lang=EN-US>2/3</span>通过，该区块被<span
+lang=EN-US>commit</span>，成为高度为<span lang=EN-US>H+1</span>的块。如果中间的任意议论投票中，有一轮的投票并没有达到<span
+lang=EN-US>2/3</span>的权重（<span lang=EN-US>Voting Power</span>），那么第一个<span
+lang=EN-US>Proposer</span>的提议被否决，这进入第二个<span lang=EN-US>Proposer</span>的提议阶段，提议重复第一个<span
+lang=EN-US>Proposer</span>提议的流程，以此类推。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>在写此书的时候，<span lang=EN-US>Cosmos</span>的测试跑到了<span lang=EN-US>Gaia9003</span>，<span
+lang=EN-US>Genki4002</span>，同时还进行着一个主网上线前的测试网网络<span lang=EN-US>Game of Stake</span>，对于测试网中的很多功能还在测试，包括验证人选举，所以对于<span
+lang=EN-US>RR</span>的算法并不是最终版本，等到主网上线后，我会再来补充具体的选举出块人方式。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span class=SpellE><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US>DPoS</span></b></span></p>
+
+<p class=a><span class=SpellE><span lang=EN-US>DPoS</span></span>是由<span
+lang=EN-US>Daniel <span class=SpellE>Lamier</span></span>在<span lang=EN-US>2013</span>年的比特股（<span
+class=SpellE><span lang=EN-US>Bitshares</span></span>）上提出来的，其底层是基于石墨烯平台来搭建，我在此处说明的是基于石墨烯底层搭建的<span
+class=SpellE><span lang=EN-US>DPoS</span></span>系统，其他的委托权益证明共识<span lang=EN-US>Delegate-<span
+class=SpellE>PoS</span></span>不在此范围之内。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>基于石墨烯的<span class=SpellE><span lang=EN-US>DPoS</span></span>，其出块人选举和<span
+lang=EN-US>RR</span>算法有点像，更像是简单版本的<span lang=EN-US>RR</span>。在<span
+class=SpellE><span lang=EN-US>DPoS</span></span>的系统中，所有出块人由用户投票得出，投票最高的几位出块人获得出块机会。通常，出块人的数量是固定的，如<span
+lang=EN-US>EOS</span>里面固定是<span lang=EN-US>21</span>位，这<span lang=EN-US>21</span>位出块人被投票出来之后，在一轮（<span
+lang=EN-US>126</span>个块，每个出块人<span lang=EN-US>6</span>个块）中，其出块顺序由<span
+lang=EN-US>15</span>个及以上的生产者约定的顺序安排。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>目前<span lang=EN-US>EOS</span>的约定顺序是按照字母<span lang=EN-US>a-z</span>排列的，比如<span
+lang=EN-US>Asia</span>会比<span lang=EN-US>Basic</span>排在前面出块，而<span lang=EN-US>Canada</span>会在<span
+lang=EN-US>Basic</span>后面出块。目前的这种排序方式，决定了每轮的排序其实有一样的顺序。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>所以<span class=SpellE><span lang=EN-US>DPoS</span></span>里面一个很基础的选举方式就是，系统规定一个固定数量的出块人，出块人由持币人投票得出，投票率按照高到低排序，系统按照高到低选择指定数量的出块人，然后将出块人随机排序，随机源可能是时间戳，也可以能出块人之间随机的参数。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><b style='mso-bidi-font-weight:normal'>多方计算<span style='color:#555555;
+background:lightgrey;mso-highlight:lightgrey'>（<span lang=EN-US>multiparty
+computation (MPC) </span>）</span></b><span lang=EN-US style='font-size:10.5pt'><o:p></o:p></span></p>
+
+<p class=a>多方计算是由<span class=SpellE><span lang=EN-US>Cardano</span></span>提出来的，目的是保证选举算法中的无偏差性，<span
+lang=EN-US>?</span>通过计算获得一个随机数，作为选举算法的输入。随机源计算出来后，选举算法仍然使用的是<span lang=EN-US>3.4.1
+follow the <span class=SpellE>satoshi</span></span>的方法。为了避免重复，我们这里说一下<span
+lang=EN-US>MPC</span>。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>在<span class=SpellE><span lang=EN-US>Cardano</span></span>的文档中，对多方计算有以下的解释：</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #F0F0F0 4.5pt;
+padding:0cm 0cm 0cm 10.0pt'>
+
+<p class=a5>多方计算（<span lang=EN-US>multiparty computation (MPC) </span>）方法用来实现选举的随机性，每个参选人独立进行一次『投硬币』的行为，然后与其他参选人分享结果。这个想法就是：结果由每个参选人随机产生，但最终它们在相同的最终价值上达成一致。</p>
+
+</div>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span class=SpellE><span lang=EN-US>Cadano</span></span>使用的是类似于扔硬币的方案来决定区块人，分为<span
+lang=EN-US>3</span>个阶段。提交，开启和恢复阶段。在提交阶段，参选人通过私钥签名一个提交，并附上周期标号，公钥等信息，这个提交会被广播给其他参选人，每个参选人都可以拿到其他参选人的提交。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>在开启阶段，参选人提交一个开启状态，这个状态带着一个值，可以解开第一步提交的数据。同样，每个人都可以拿到其他人的开启值。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>最后恢复阶段，每个参选人相当于都拿到了所有的提交和开启，如果参选人中存在不诚实的人，那么很有可能有些不提交，或者不提交开启的情况出现，在这种情况下，诚实的选民可以张贴（上面有提到）来重建密钥，这个想法很简单：即使某些选民是对手，选举也能成功结束。每个诚实的参选人解出来的都是同一个密钥，也就是随机种子。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>这就是<span class=SpellE><span lang=EN-US>Cardano</span></span>多方计算的出来的结果。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><b style='mso-bidi-font-weight:normal'><span lang=EN-US>VRF</span></b><span
+lang=EN-US style='font-size:10.5pt'><o:p></o:p></span></p>
+
+<p class=a><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='color:#252525'>Verifiable random function</span></b><span lang=EN-US
+style='color:#252525'>&nbsp;(VRF) </span><span style='color:#252525'>，同样是计算随机元的一个方法，其应用</span>代表是<span
+class=SpellE><span lang=EN-US>Algorand</span></span>和<span class=SpellE><span
+lang=EN-US>Dfinity</span></span><span lang=EN-US> </span>。<span lang=EN-US>VRF</span>的描述其实很简单：</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>它是一种伪随机函数，可以在不提供输入值的情况下，验证结果的正确性。给定输入值<span lang=EN-US>x</span>，秘钥<span
+lang=EN-US>SK</span>的所有者可以计算函数值<span lang=EN-US>y = FSK</span>（<span
+lang=EN-US>x</span>）和证明<span class=SpellE><span lang=EN-US>pSK</span></span>（<span
+lang=EN-US>x</span>）。 使用证明和公钥<span lang=EN-US>&lt;math&gt; PK = g ^ {SK} &lt;/
+math&gt;</span>，每个人都可以检查值<span lang=EN-US>y = FSK</span>（<span lang=EN-US>x</span>）是否确实正确计算，整个过程并不需要用到所有者的私钥。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><b style='mso-bidi-font-weight:normal'>其他</b></p>
+
+<p class=a>业界还有一些选举算法，<span class=SpellE><span lang=EN-US>Vitalik</span></span>曾经写过一篇文章，专门介绍了选举算法的不同优缺点。链接：<span
+lang=EN-US><a href="https://vitalik.ca/files/randomness.html"><span
+style='color:blue'>https</span></a><a
+href="https://vitalik.ca/files/randomness.html"><span style='color:blue'>://vitali</span></a><a
+href="https://vitalik.ca/files/randomness.html"><span style='color:blue'>k.ca/fi</span></a><a
+href="https://vitalik.ca/files/randomness.html"><span style='color:blue'>les</span></a><a
+href="https://vitalik.ca/files/randomness.html"><span style='color:blue'>/randomness.</span></a><a
+href="https://vitalik.ca/files/randomness.html"><span style='color:blue'>html</span></a></span></p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>其中如<span lang=EN-US>NXT</span>的<span lang=EN-US>RNG</span>算法，<span
+lang=EN-US>RANDAO</span>算法等等，有兴趣的小伙伴可以看一下。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><b style='mso-bidi-font-weight:normal'>伪随机数源</b><span lang=EN-US
+style='font-size:10.5pt'><o:p></o:p></span></p>
+
+<p class=a>随机数分为真随机数和伪随机数，真随机数是真是发生在现实中的随机事件产生的结果，比如扔硬币，扔骰子等等，伪随机数是用确定性的算法计算出来自<span
+lang=EN-US>[0,1]</span>均匀分布的随机数序列，其实伪随机数并不是真正意义上的随机数。因为产生伪随机数是用确定的算法，那么只要是输入是一样的，那么输出肯定是一样的，也就意味着，输入源一旦被确定，那么输出是肯定会被知道的。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span class=SpellE><span lang=EN-US>PoS</span></span>出块人不能被提前被人预测出来，如果顺序能被知道，那么出块人提前勾结形成卡特尔组织，对系统是有一定危害的（在没有出现抵押金<span
+lang=EN-US>-</span>抵扣的策略之前，这种攻击代价更小）。所以，<span class=SpellE><span lang=EN-US>PoS</span></span>中的随机算法输入源显得非常非常重要。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>在<span class=SpellE><span lang=EN-US>Tezos</span></span>中，要求在下一个选举周期之前，该周期所有出块人必须披露一个<span
+lang=EN-US>Nonce</span>，所有的<span lang=EN-US>Nonce</span>会被收集到一个列表，通过<span
+class=SpellE><span lang=EN-US>Scrypt</span></span>密钥衍生函数得出种子，该种子用于下个选择周期的随机种子输入源。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span lang=EN-US>EOS</span>中，在每个出块周期开始时，会根据持币人所投票数选出<span
+lang=EN-US>21</span>个区块生产者。被选中的区块生产者的顺序会根据<span lang=EN-US>15</span>个及以上的区块生产者的同意，制定出块顺序的安排。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>在<span class=SpellE><span lang=EN-US>Cadona</span></span>中，使用多方计算（<span
+lang=EN-US>multiparty computation (MPC) </span>）的方法来获取随机种子，简称扔硬币（<span
+lang=EN-US>Coin tossing</span>）。简单来说就是这个方法模拟了现实中扔骰子的过程，来最终确定随机种子的生成，需要每个出块人都扔一次硬币得到一个随机数，然后互相分享扔硬币的结果，然后对所有结果进行种子生成，如果所有人都生成了一样的结果，那么说明大家互相使用了一样的结果。这就确认了种子生成。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span class=SpellE><span lang=EN-US>Cadano</span></span>和<span
+class=SpellE><span lang=EN-US>Tezos</span></span>的随机种子生成很相似，只不过实现细节上有不一样。<span
+class=SpellE><span lang=EN-US>Cadano</span></span>用多方计算保证了即使有人没有分享结果，也能通过部分结果恢复成整体。而<span
+class=SpellE><span lang=EN-US>Tezos</span></span>要求每个出块人都批量<span lang=EN-US>Nonce</span>，否则会被扣除抵押金（<span
+lang=EN-US>Slash</span>）。相当于<span class=SpellE><span lang=EN-US>Cadano</span></span>用了数学的方法解决了批量的问题，<span
+class=SpellE><span lang=EN-US>Tezos</span></span>用了规则来限定，各有千秋了。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a1 style='margin-top:36.0pt;margin-right:0cm;margin-bottom:13.0pt;
+margin-left:42.0pt;text-indent:-21.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+lang=EN-US style='font-size:12.5pt'><span style='mso-list:Ignore'>1.5.<span
+style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+style='font-size:14.0pt'>打包交易</span><span lang=EN-US style='font-size:12.5pt'><o:p></o:p></span></p>
+
+<p class=a>轮到出块人出块的时候，出块人会从交易池里面挑选交易交易，并验证交易后，将其打包到区块中。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>验证的过程就是对交易做一些基本的判断，比如判断交易合不合法，签名是否正确，交易账户是否有足够的余额，交易是否已经被花出，交易数据大小是否已经超出限制等，不同<span
+class=SpellE><span lang=EN-US>PoS</span></span>公有链对于交易的判断不同，验证的条件也不同。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>另外，从交易池子里面挑选交易，一般会有一个选择逻辑。该选择逻辑会参考两个因素，一个是交易手续费的大小，一个是发起交易的时间点。一般情况下，出块人的节点设置会优先选择手续费大的进行打包，同时系统也会设定一定参数，将交易时间点靠前的交易加入打包。当然，出块人还可以设置一些参数来调整打包程序，比如选择交易额大的，占内存空间小的等等，但是，不可以设置一些对地址交易的优先级，如果可以，那么该<span
+class=SpellE><span lang=EN-US>PoS</span></span>机制的抗审查能力会被质疑。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a1 style='margin-top:36.0pt;margin-right:0cm;margin-bottom:13.0pt;
+margin-left:42.0pt;text-indent:-21.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+lang=EN-US style='font-size:12.5pt'><span style='mso-list:Ignore'>1.6.<span
+style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+style='font-size:14.0pt'>广播交易</span><span lang=EN-US style='font-size:12.5pt'><o:p></o:p></span></p>
+
+<p class=a>出块人将新区块生成后，会将区块数据广播到网络当中，为了让所有节点都把这些交易记录到自己的网络当中，这样全网维护的账本才能统一。网络中其他的节点会在不同的时间接收到广播的数据，新的节点会对打包数据进行进一步确认，并对其签名做认证，只有通过的验证数据对其进记录该节点本地所记录的账本当中。如果没有认证通过，那么节点将拒绝对其签名，同时，也不会将节点数据继续广播到其他节点中去。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>广播通过点对点（<span lang=EN-US>Peer to Peer P2P</span>）的网络进行传播。在点对点的网络当中，所有节点都是平等的，并且广播的传递并不会以物理地域为界限选择节点广播，而是会和网络中和自己连接的节点为传播，<span
+lang=EN-US>1</span>传多，多传广，这样节点信息传播会以病毒扩散般的速度扩散开来。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>虽然广播的传递不是以最近原则为基础，但是广播传播的速度会受到地域的影响，广播到达各个节点的时间并不一致，所以会出现一个数据同步问题。出块人通过节点<span
+lang=EN-US>A</span>进行了广播，节点<span lang=EN-US>B</span>在<span lang=EN-US>100ms</span>后接受到了数据包，节点<span
+lang=EN-US>C</span>则是在<span lang=EN-US>1000ms</span>后接收到了数据包，这种延迟的时间间隔，会让整个网络有被攻击的机会出现，比如双花攻击、短程攻击等等，结果会影响交易的最终确定性，通常为了使得整个网络消灭延迟，通常交易的最终确定需要一定区块的时间确认。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a1 style='margin-top:36.0pt;margin-right:0cm;margin-bottom:13.0pt;
+margin-left:42.0pt;text-indent:-21.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+lang=EN-US style='font-size:12.5pt'><span style='mso-list:Ignore'>1.7.<span
+style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+style='font-size:14.0pt'>验证人确认</span><span lang=EN-US style='font-size:12.5pt'><o:p></o:p></span></p>
+
+<p class=a><span class=SpellE><span lang=EN-US>PoS</span></span>当中，矿工除了会出块外，还有充当验证人的角色。为了保证足够快的交易确认，每个区块的需要一定数量的验证人来进行签名确认，来保证其交易的合法性。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>当前高度下，当出块人出块并广播后，被验证人接受到广播，紧接着对区块数据进行验证，在确认后用私钥签名，并继续广播出去。假设每个块需要<span
+lang=EN-US>10</span>个签名，那么只有当网络中的所有的验证人都签名后，这个块才会被认为是最终的区块，并且填充到新的高度上来。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>所以在出块人广播后，每个节点接收到广播，并维护这区块的一个中心状态，比如当系统只有<span lang=EN-US>1</span>个签名的时候，节点并不能承认这个块是一个最终块，只有当该节点收到该区块新的签名更新，直到数量更新到<span
+lang=EN-US>10</span>的时候，该节点才会把区块写到最高的高度上来的。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>当然，为了保证签名的顺利性，整个区块的确认机制需要保证被提前选出来的验证人不会作恶，不在线或者有时间延迟等问题，可替代的解决方案有验证人备选，判断最小时间延迟，<span
+lang=EN-US>Slash</span>作恶等。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>所以，其实每个由节点所运行的<span class=SpellE><span lang=EN-US>PoS</span></span>网络当中，节点运行的其实都是一个服务程序，这个程序会检测很多状态，以此来确认该区块的最终确定性。比如，检测是否有签名权利，检测是否可以替代签名，检测区块的最终签名状态等，不同的检测结果会触发接下来的很多操作，其目的都是为了保证整个区块链能顺利并且稳定的运行下去，不至于某个验证人不在线，整个网络崩溃的问题出现。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a>至此，<span class=SpellE><span lang=EN-US>PoS</span></span>共识的<span
+lang=EN-US>7</span>个步骤就说完了，整个过程从运行人的角度来说，从运行节点到区块验证确认；从区块高度角度说，就一个个新块打包生成的一个过程，每个区块链的共识基本都是这样，不断往复循环的一个过程。</p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
