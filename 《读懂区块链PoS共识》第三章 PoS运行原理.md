@@ -27,7 +27,7 @@
  ![Image text](https://tezos.oss-cn-beijing.aliyuncs.com/pic/pos-book/%E5%9B%BE%E7%89%87%207.png)
 创建完成后的一个钱包
 
- ![Image text](https://tezos.oss-cn-beijing.aliyuncs.com/pic/pos-book/%E5%9B%BE%E7%89%87%28.png)
+ ![Image text](https://tezos.oss-cn-beijing.aliyuncs.com/pic/pos-book/%E5%9B%BE%E7%89%87%208.png)
 钱包创建完成，可以参与到PoS共识，即PoS挖矿中去。按照Nuls的共识，你可以将你的挖矿权益委托给矿工。钱包中已经列举了一些矿工，选择一个矿工，输入你要委托的Nuls数量，就可以参与到共识挖矿中来。
 
  ![Image text](https://tezos.oss-cn-beijing.aliyuncs.com/pic/pos-book/%E5%9B%BE%E7%89%87%209.png)
