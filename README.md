@@ -9,7 +9,7 @@
 *  [第四章 PoS中的性能与扩容](https://github.com/wetez-project/pos-book/blob/master/%E3%80%8A%E8%AF%BB%E6%87%82%E5%8C%BA%E5%9D%97%E9%93%BEPoS%E5%85%B1%E8%AF%86%E3%80%8B%E7%AC%AC%E5%9B%9B%E7%AB%A0%20PoS%E4%B8%AD%E7%9A%84%E6%80%A7%E8%83%BD%E4%B8%8E%E6%89%A9%E5%AE%B9.md)
 *  [第五章 PoS中的激励与惩罚](https://github.com/wetez-project/pos-book/blob/master/%E3%80%8A%E8%AF%BB%E6%87%82%E5%8C%BA%E5%9D%97%E9%93%BEPoS%E5%85%B1%E8%AF%86%E3%80%8B%E7%AC%AC%E4%BA%94%E7%AB%A0%20PoS%E4%B8%AD%E7%9A%84%E6%BF%80%E5%8A%B1%E4%B8%8E%E6%83%A9%E7%BD%9A.md)
 *  [第六章 PoS中的矿工](https://github.com/wetez-project/pos-book/blob/master/%E3%80%8A%E8%AF%BB%E6%87%82%E5%8C%BA%E5%9D%97%E9%93%BEPoS%E5%85%B1%E8%AF%86%E3%80%8B%E7%AC%AC%E5%85%AD%E7%AB%A0%20PoS%E4%B8%AD%E7%9A%84%E7%9F%BF%E5%B7%A5.md)
-*  第七章 PoS中的持币人
+*  [第七章 PoS中的持币人](https://github.com/wetez-project/pos-book/blob/master/%E3%80%8A%E8%AF%BB%E6%87%82%E5%8C%BA%E5%9D%97%E9%93%BEPoS%E5%85%B1%E8%AF%86%E3%80%8B%E7%AC%AC%E4%B8%83%E7%AB%A0%20PoS%E4%B8%AD%E7%9A%84%E6%8C%81%E5%B8%81%E4%BA%BA.md)
 *  第八章 链上治理
 *  第九章 PoS目前存在的问题
 *  第十章 PoS项目例子
