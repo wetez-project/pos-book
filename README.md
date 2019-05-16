@@ -11,7 +11,7 @@
 *  [第六章 PoS中的矿工](https://github.com/wetez-project/pos-book/blob/master/%E3%80%8A%E8%AF%BB%E6%87%82%E5%8C%BA%E5%9D%97%E9%93%BEPoS%E5%85%B1%E8%AF%86%E3%80%8B%E7%AC%AC%E5%85%AD%E7%AB%A0%20PoS%E4%B8%AD%E7%9A%84%E7%9F%BF%E5%B7%A5.md)
 *  [第七章 PoS中的持币人](https://github.com/wetez-project/pos-book/blob/master/%E3%80%8A%E8%AF%BB%E6%87%82%E5%8C%BA%E5%9D%97%E9%93%BEPoS%E5%85%B1%E8%AF%86%E3%80%8B%E7%AC%AC%E4%B8%83%E7%AB%A0%20PoS%E4%B8%AD%E7%9A%84%E6%8C%81%E5%B8%81%E4%BA%BA.md)
 *  [第八章 链上治理](https://github.com/wetez-project/pos-book/blob/master/%E3%80%8A%E8%AF%BB%E6%87%82%E5%8C%BA%E5%9D%97%E9%93%BEPoS%E5%85%B1%E8%AF%86%E3%80%8B%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E9%93%BE%E4%B8%8A%E6%B2%BB%E7%90%86.md)
-*  第九章 PoS目前存在的问题
+*  [第九章 PoS目前存在的问题](https://github.com/wetez-project/pos-book/blob/master/%E3%80%8A%E8%AF%BB%E6%87%82%E5%8C%BA%E5%9D%97%E9%93%BEPoS%E5%85%B1%E8%AF%86%E3%80%8B%E7%AC%AC%E4%B9%9D%E7%AB%A0%20PoS%E7%9B%AE%E5%89%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98.md)
 *  第十章 PoS项目例子
 *  第十一章 如何设计一个基于PoS共识的项目
 *  第十一章 PoS共识带来的商业价值
