@@ -186,7 +186,7 @@ Tezos对不诚实行为的惩罚是非常严厉的。按照周期为范围，如
 
 Tezos是非常强调链上治理的，最开始讲Tezos的一个重要特点就是自治理，自治理需要配套一套链上提议-投票的系统来一起维护。
 
-![Image text](https://tezos.oss-cn-beijing.aliyuncs.com/pic/pos-book/%E5%9B%BE%E7%89%87%2015.png)
+![Image text](https://tezos.oss-cn-beijing.aliyuncs.com/pic/pos-book/%E5%9B%BE%E7%89%87%2017.png)
 
 目前，开发团队的投票系统针对的是Tezos底层的协议升级，也就是自治理部分，分为4个阶段，每个阶段都是以周期计算（Tezos中的周期为Cycle，一个Cycle4096个块）
 
