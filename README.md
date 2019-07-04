@@ -19,7 +19,7 @@
    * [Poalkadot](https://github.com/wetez-project/pos-book/blob/master/《读懂区块链PoS共识》第十章%20PoS项目例子--Polkadot.md)
    * [Cardano](https://github.com/wetez-project/pos-book/blob/master/《读懂区块链PoS共识》第十章%20PoS项目例子--Cardano.md)
 *  [第十一章 如何设计一个基于PoS共识的项目](https://github.com/wetez-project/pos-book/blob/master/《读懂区块链PoS共识》第十一章%20如何设计一个基于PoS共识的项目.md)
-*  第十一章 PoS共识带来的商业价值
-*  第十二章 后PoS时代
+*  第十二章 [PoS共识带来的商业价值](https://github.com/wetez-project/pos-book/blob/master/《读懂区块链PoS共识》第十二章%20PoS共识带来的商业价值.md)
+*  第十三章 后PoS时代
 *  附录
 *  参考文献
